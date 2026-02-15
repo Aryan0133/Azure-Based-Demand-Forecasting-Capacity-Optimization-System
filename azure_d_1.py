@@ -69,7 +69,7 @@ df['internet_traffic_index'] = df['internet_traffic_index'].interpolate()
 
 df.isnull().sum()
 
-df.to_csv("azure_demand_module1_cleaned.csv", index=False)
+df.to_csv("Dataset_cleaned.csv", index=False)
 print("Data Cleaning & Preparation Completed ")
 
 daily_usage = df.groupby('timestamp')['usage_units'].mean()
